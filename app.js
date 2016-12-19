@@ -18,15 +18,15 @@ require(['jquery','backbone','baidu','swiper','router.js'],function($,Backbone){
     //开启路由监听
     Backbone.history.start();
     //定位页面1秒后隐藏
-    if (navigator.geolocation){
-        //使用navigator的geolocation属性获取位置相关信息  getCurrentPosition获取当前坐标 latitude  十进制数的纬度 longitude   十进制数的经度
-        navigator.geolocation.getCurrentPosition(function(positionData){
-            $(".po-icon").html("定位中。。。");
-            document.write(positionData);
-        }); 
-    }else{ 
-        console.log("该浏览器不支持获取地理位置。"); 
-    }
+    // if (navigator.geolocation){
+    //     //使用navigator的geolocation属性获取位置相关信息  getCurrentPosition获取当前坐标 latitude  十进制数的纬度 longitude   十进制数的经度
+    //     navigator.geolocation.getCurrentPosition(function(positionData){
+    //         $(".po-icon").html("定位中。。。");
+    //         document.write(positionData);
+    //     }); 
+    // }else{ 
+    //     console.log("该浏览器不支持获取地理位置。"); 
+    // }
     setTimeout(function(){
         var wordspace = new Backbone.Router();
         wordspace.navigate('home',{trigger: true});
