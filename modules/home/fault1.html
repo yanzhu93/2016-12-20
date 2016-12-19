@@ -1,0 +1,75 @@
+<!--home -->
+<script type="text/html" id = "fault1">
+		<div id="banner">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+					<%for(var j in data.act_info[0].act_rows){%>
+				    	<div class="swiper-slide"><img src=<%=data.act_info[0].act_rows[j].activity.img%>></div>
+				    <%}%>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<nav>
+			<ul class="m-nav">
+				<%for(var a in data.act_info[1].act_rows){%>
+					<li>
+						<div style=background-image:url(<%=data.act_info[1].act_rows[a].activity.img%>)></div>
+						<p><%=data.act_info[1].act_rows[a].activity.name%></p>
+					</li>
+				<%}%>
+			</ul>
+		</nav>
+		<div class="m-npic">
+			<ul>
+				<%for(var b=0; b<3;b++){%>
+					<li class="m-npic1" style=background-image:url(<%=data.act_info[3].act_rows[b].activity.img%>)></li>
+				<%}%>
+			</ul>
+		</div>
+		<div class="m-bld">
+			<div class="m-bld1" style=background-image:url(<%=data.act_info[4].act_rows[0].act_rows[0].chead_detail.img%>)></div>
+			<ul class="m-bld2">
+				<%for(var c in data.act_info[4].act_rows[1].act_rows){%>
+					<li><a href="#" style=background-image:url(<%=data.act_info[4].act_rows[1].act_rows[c].cactivity_detail.img%>)></a></li>
+				<%}%>
+			</ul>
+			<ul class="m-bld3">
+				<%for(var d in data.act_info[4].act_rows[2].act_rows){%>
+					<li><a href="#" style=background-image:url(<%=data.act_info[4].act_rows[2].act_rows[d].cicons_detail.img%>)><%=data.act_info[4].act_rows[2].act_rows[d].cicons_detail.name%></a></li>
+				<%}%>
+			</ul>
+			<ul class="m-bld4">
+				<%for(var e in data.act_info[4].act_rows[3].act_rows){%>
+					<li><a href="#" style=background-image:url(<%=data.act_info[4].act_rows[3].act_rows[e].cscene_detail.img%>)></a></li>
+				<%}%>
+			</ul>
+		</div>
+		<%for(var f in data.act_info[5].act_rows){%>		
+			<ul class="m-shop">
+				<li class="m-shop-firut">
+					<div class="m-sf-list">
+						<span style=color:#<%=data.act_info[5].act_rows[f].category_detail.category_color%>;border-color:#<%=data.act_info[5].act_rows[f].category_detail.category_color%>;><%=data.act_info[5].act_rows[f].category_detail.name%></span>					
+						<a href="#">更多</a>
+					</div>
+					<div class="m-shop-pic" style=background-image:url(<%=data.act_info[5].act_rows[f].activity.img%>)></div>
+					<ul class="m-shop-product">
+						<%for(var g in data.act_info[5].act_rows[f].category_detail.goods){%>
+							<li>
+								<div class="product-img" style=background-image:url(<%=data.act_info[5].act_rows[f].category_detail.goods[g].img%>)></div>
+								<div class="product-meat">
+									<p><%=data.act_info[5].act_rows[f].category_detail.goods[g].name%></p>
+									<p>精选</p>
+									<p><%=data.act_info[5].act_rows[f].category_detail.goods[g].specifics%></p>
+									<span>￥<%=data.act_info[5].act_rows[f].category_detail.goods[g].partner_price%></span>
+								</div>
+								<div class="product-add">
+									<span class="imgjump"></span>
+								</div>
+							</li>
+						<%}%>
+					</ul>
+				</li>
+			</ul>
+		<%}%>		
+</script>

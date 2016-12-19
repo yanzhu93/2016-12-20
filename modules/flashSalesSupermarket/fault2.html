@@ -1,0 +1,67 @@
+<script type="text/html" id = "fault2">	
+	<article class="page2-article">
+			<ul>
+				<%for(var i in data.categories){%>
+				<li style=background-image:url(<%=data.categories[i].flag%>) data-id=<%=data.categories[i].id%>><%=data.categories[i].name%></li>
+				<%}%>
+			</ul>
+		</article>
+		<aside class="page2-aside">
+			<ul class="page2-aside-top">
+				<li class="page2-aside-top-act" data-list="all">全部分类&nbsp;<span class="page2-jt1" style="background-image: url(../images/jt2.png)"></span></li>
+				<li class="page2-aside-top-act" data-list="zonghe"><span></span>综合排序&nbsp;<span class="page2-jt1" style="background-image: url(../images/jt2.png)"></span></li>
+				<ul class="page2-aside-top1">
+					<div>
+						<li class="page2-aside-top1c">全部分类</li>
+						<li class="page2-aside-top1c">综合排序</li>
+						<li>销量最高</li>
+						<li>价格最低</li>
+						<li>价格最高</li>
+					</div>
+				</ul>
+			</ul>			
+			<ul class="page2-aside-main" id="fault-3">
+				<p></p>
+				<%for(var n in data.products["104749"]){%>
+					<li>
+						<div class="page2-product-pic">
+							<div style=background-image:url(<%=data.products["104749"][n].img%>) class="product-img"></div>
+						</div>
+						<div class="page2-product">
+							<p class="ellipsis"><%=data.products["104749"][n].name%></p>
+							<span>精选</span><span><%=data.products["104749"][n].pm_tags[0]%></span>
+							<p class="ellipsis"><%=data.products["104749"][n].specifics%></p>
+							<p><span>￥<%=data.products["104749"][n].partner_price%></span><span>￥<%=data.products["104749"][n].market_price%></span></p>
+							<div>
+								<span class="removeproduct"></span>
+								<span class="productnum">0</span>
+								<span class="addproduct"></span>
+							</div>
+						</div>
+					</li>
+				<%}%>
+			</ul>
+		</aside>
+</script>
+
+<script type="text/html" id = "fault3">
+		<p></p>
+		<%for(var s in data.products[shopid]){%>
+		<li>
+			<div class="page2-product-pic">
+				<div style=background-image:url(<%=data.products[shopid][s].img%>) class="product-img"></div>
+			</div>
+			<div class="page2-product">
+				<p class="ellipsis"><%=data.products[shopid][s].name%></p>
+				<span>精选</span><span><%=data.products[shopid][s].pm_tags%></span>
+				<p class="ellipsis"><%=data.products[shopid][s].specifics%></p>
+				<p><span>￥<%=data.products[shopid][s].partner_price%></span><span>￥<%=data.products[shopid][s].market_price%></span></p>
+				<div>
+					<span class="removeproduct"></span>
+					<span class="productnum">0</span>
+					<span class="addproduct"></span>
+				</div>
+			</div>
+		</li>
+	<%}%>
+</script>

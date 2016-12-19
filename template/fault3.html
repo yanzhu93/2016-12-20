@@ -1,0 +1,8 @@
+<script type="text/html" id = "fault4">
+	<%for(var a in data.point_ticket){%>
+		<li style=background-image:url(<%=data.point_ticket[a].url%>)>
+			<p class="ticket-name"><%=data.point_ticket[a].name%></p>
+			<p class="ticket-price"><%=data.point_ticket[a].point%>积分</p>
+		</li>
+	<%}%>
+</script>

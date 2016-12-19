@@ -1,0 +1,93 @@
+@charset "utf-8";
+body{
+	font-family:,"Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+    color: #333;
+    font-size: 0.14rem;
+    overflow: hidden;
+}
+a{
+	color:#333;
+}
+header{
+	position: relative;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    background-color: #f9fafd;
+    z-index: 2;
+    width: 100%;
+}
+header>a{
+	left: .07rem;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    width: 0.774rem;
+    height: 0.568rem;    
+    background: url(../images/jt3.png) no-repeat left center;
+	background-size: auto 0.32rem;
+}
+header div{
+	position: absolute;
+	left:0;
+	top:0;
+	bottom: 0;
+	right: 0;
+	margin:auto;
+	width:50%;
+	text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: solid 1px #e0e0e0;
+    background: #fff url(../images/s1.png) no-repeat 0.06rem center;
+    border-radius: .03rem;
+    font-size: 0.16rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    padding-left: 0.32rem;
+    background-size: 0.15rem;
+}
+header div input{
+	border:none;
+}
+header span{
+    right: .08rem;
+    text-align: center;
+    color: #777;
+    position: absolute;
+    top: 0;
+    width: 0.72rem;
+    height: 0.52rem;
+}
+.main{
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0.58rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #efefef;
+    font-size: 0.16rem;
+}
+.sug{
+    color: #888;
+    padding-top: 0.3rem;
+    padding-left: 0.18rem;
+    padding-bottom: 0.36rem;
+    display: block;
+}
+.sug ul{
+    padding-bottom:0.48rem;
+    margin-top: 0.05rem;
+}
+.sug li{
+    float: left;
+    border: solid 1px #e4e4e4;
+    background-color: #FFF;
+    margin: 0.072rem 0.12rem 0.048rem 0;
+    padding: .096rem 0.18rem;
+    border-radius: 0.35rem;
+    color: #000;
+}

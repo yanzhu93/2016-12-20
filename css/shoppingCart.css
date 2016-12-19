@@ -1,0 +1,302 @@
+@charset "utf-8";
+body{
+	font-family:,"Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+    color: #333;
+    font-size: 0.16rem;
+    overflow: hidden;
+}
+a{
+	color:#333;
+}
+footer{
+	width: 100%;
+	height: 0.7rem;
+	background-color: rgba(246,246,246,.95);
+	position: fixed;
+	z-index: 100;
+	left:0;
+	bottom: 0;
+}
+footer>ul{
+	display: flex;
+	width: 100%;
+}
+footer li{
+	flex:1;
+	text-align: center;
+	line-height: 1.05rem;
+}
+.foot_bj1{
+	background: url(../images/5.png) no-repeat center 0.05rem;
+	background-size: 0.35rem;
+}
+.foot_bj2{
+	background: url(../images/2.png) no-repeat center 0.05rem;
+	background-size: 0.35rem;
+}
+.shopNum{
+    background-color: #f40;
+    color: #fff;
+    line-height: 0.22rem;
+    width: 0.22rem;
+    text-align: center;
+    font-size: 0.13rem;
+    -webkit-transition: -webkit-transform .1s;
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+    left: 50%;
+    top: .06rem;
+    margin-left: 0.15rem;
+}
+.foot_bj3{
+	background: url(../images/7.png) no-repeat center 0.05rem;
+	background-size: 0.35rem;
+    position: relative;
+}
+.foot_bj4{
+	background: url(../images/4.png) no-repeat center 0.05rem;
+	background-size: 0.35rem;
+}
+.page3-header{
+	position: relative;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    background-color: #f9fafd;
+    z-index: 2;
+}
+.header-content{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.776rem;
+    right: 0.776rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.18rem;
+}
+.page3-main{
+	overflow-y: auto;
+    overflow-x: hidden;
+    top: 0.58rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.7rem;
+    background-color: #efefef;
+}
+.p3main-top{
+	margin:0.13rem 0;
+	margin-top: 0;
+	background-color: #fff;
+}
+.addr-table{
+	line-height: 0.2rem;
+    background:url(../images/g1.png) repeat-x,url(../images/g1.png) repeat-x;
+    background-size: auto .04rem;
+    background-position: left top,left bottom;
+}
+.addr-table th{
+	padding: .09rem 0.13rem .09rem 0.19rem;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: baselin;
+}
+.addr-table td{
+	padding:0.09rem 0;
+}
+.ui-hidden {
+    visibility: hidden;
+}
+.p3-main-cartWraper{
+	background-color: #fff;
+	margin: 0.13rem 0;
+}
+.cart-group{
+	padding: .06rem 0 0 0;
+	position: relative;
+}
+.groupName{
+	color:#999;
+	height: 0.39rem;
+    padding-left: 0.18rem;
+    line-height: 0.26rem;
+}
+.groupName:before{
+	background-color: #ffd600;
+	content: '';
+    display: inline-block;
+    width: 0.052rem;
+    height: 0.155rem;
+    vertical-align: -.02rem;
+    border-radius: 0.03rem;
+    margin-right: 0.06rem;
+}
+.groupAddBtn{
+	display: block;
+	color: #e64f1a;
+	content: '';
+    border: 1px solid #ff3800;
+    position: absolute;
+    right: 0.16rem;
+    top: .065rem;
+    width: 0.96rem;
+    height: 0.31rem;
+    line-height: 0.31rem;
+    border-radius: 0.15rem;
+    text-align: center;
+}
+.groupText{
+	color: #999;
+	font-size: 0.14rem;
+    line-height: 0.25rem;
+    padding-left: 0.18rem; 
+}
+.groupRecevie{
+	border-top:1px solid #e0e0e0;
+	padding-right: 0.32rem;
+	padding-left: 0.2rem;
+	line-height: 0.65rem;
+    background:url(../images/jt1.png) no-repeat right center;
+    background-size: auto 0.13rem;
+    position: relative;
+}
+.groupRecevie span:first-of-type{
+	float:right;
+}
+.groupselect{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0;
+    opacity: 0;
+}
+.groupselectshow{
+	color: #e64f1a;
+}
+.groupComment{
+	border-top:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+	padding-left: 0.18rem;
+	line-height: 0.65rem;
+}
+.groupComment input{
+	width: 2.82rem;
+    height: 0.41rem;
+    border: solid 1px #cecece;
+    text-indent: .05rem;
+    border-radius: .05rem;
+    margin-left: 0.04rem;
+    -webkit-appearance: none;
+}
+.group-item{
+	border-bottom: solid 1px #cecece;
+	line-height: 0.51rem;	
+}
+.group-item td{
+	position: relative;
+}
+.group-item-checkbox{
+	background: url(../images/g2.png) no-repeat center center;
+	background-size: 0.2rem 0.2rem;
+}
+.group-item-img-wrap{
+	background-size: 100% 100%;
+    width: 0.65rem;
+    height: 0.65rem;
+    position: relative;
+}
+.group-item-name,.group-item-price{
+	padding-left: 0.18rem;
+}
+.group-item-num{
+	position: absolute;
+	width: 1.3rem;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    right: 0;
+    bottom:0;
+    text-align: center;
+    border-radius: 0.15rem;
+    color: #f40;
+}
+.group-item-num span:first-of-type,.group-item-num span:last-of-type{
+	width: 0.33rem;
+    height: 0.33rem;
+    display: inline-block;
+    background: #ff4300 url(../images/and.png) no-repeat left center;
+    background-origin: border-box;
+    background-size: 200% 100%;
+    border-radius: 50%;
+    border: 1px solid #ffbe89;
+}
+.group-item-num span:nth-of-type(2){
+	margin:0 0.07rem;
+	line-height: 0rem;
+	display: inline-block;
+	position: relative;
+	top:-0.1rem;
+	color:#333;
+}
+.group-item-num span:last-of-type{
+	background-position: right center;
+}
+.groupFooter{
+	clear:both;
+}
+.groupFooter{
+	line-height: 0.52rem;
+}
+.groupbtn{
+	width: 1.3rem;
+    text-align: center;
+    float:right;
+    /*background-color: gray;*/
+	background-color: #ffd600;
+	
+}
+.selectAll{
+	margin-left: 0.23rem;
+	display: inline-block;
+    min-width: 0.68rem;
+    padding-left: 0.32rem;
+    background: url(../images/g2.png) no-repeat left center;
+	background-size: 0.2rem 0.2rem;
+} 
+.payfor{
+	color: #e64f1a;
+}
+.page3-main2{
+	position: absolute;
+	top: 0.58rem;
+    bottom: 0.7rem;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #efefef;
+    display: none;
+}
+.empty-notice{
+	color: #999;
+	padding-top: 20%;
+    text-align: center;
+    line-height: 0.52rem;
+}
+.notice-icon{
+	width: 1.03rem;
+    height: 1.03rem;
+    border-radius: 50%;
+    background:url(../images/g5.png)center center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+.goshopping{
+	border: solid 1px #cecece;
+    border-radius: .03rem;
+    padding: .05rem 0.39rem;
+}

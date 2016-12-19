@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type="text/javascript">
+	document.documentElement.style.fontSize = innerWidth/4.14 +"px";
+    window.onresize =function(){
+      document.documentElement.style.fontSize = innerWidth/4.14 + "px";
+    }
+    </script>
+    <link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/pointReward.css">
+	<script type="text/javascript" src = "../js/jquery-1.11.2.js"></script>	
+	<script type="text/javascript" src = "../js/baiduTemplate.js"></script>	
+	<script type="text/javascript" src = "pointReward.js"></script>	
+</head>
+<body>
+	<header class="pub-header">
+		<span class="pubheader-icon"></span>
+		<span class="phe-content">积分商城</span>
+	</header>
+	<div class="main">
+		<div class="block">
+			<div class="ring-wrap">
+				<p>可用积分<br /><span>0</span></p>
+				<div class="ring" style="transform: rotate(0deg); width: 180px; height: 180px; position: relative;">
+					<!-- <div class="circle circle1" style="border-width: 37px;"></div>
+					<div class="circle circle2" style="width: 176px; height: 176px; top: 2px; left: 2px; border-width: 23px; clip: rect(0px 88px 176px 0px); transform: rotate(180deg);">
+						<div class="inner" style="border-width: 10px;"></div>
+					</div>
+					<div class="circle circle3" style="border-width: 37px; clip: rect(0px 90px 180px 0px);"></div>
+					<div class="circle circle4" <="" div="" style="width: 176px; height: 176px; top: 2px; left: 2px; border-width: 23px; clip: rect(0px 176px 176px 88px); display: block; transform: rotate(180deg);"><div class="inner" style="border-width: 10px;"></div></div> -->
+				</div>
+			</div>
+			<ul class="menus">
+				<li>积分明细</li>
+				<li>兑换记录</li>
+				<li>积分规则</li>
+			</ul>
+		</div>
+		<ul class="tickets" id="fault-4">
+			
+		</ul>
+	</div>
+	<div id="tempBox"></div>
+</body>
+</html>
