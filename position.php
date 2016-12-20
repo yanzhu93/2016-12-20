@@ -125,7 +125,7 @@ $signPackage = $jssdk->GetSignPackage();
 </head>
 <body>
 	<div class="position">
-		<div class="po-icon"><div>定位中</div></div>
+		<div class="po-icon"><div></div>定位中</div>
 	</div>
 	<div id = "main">
 		<div class = "home">			
@@ -146,61 +146,47 @@ $signPackage = $jssdk->GetSignPackage();
 	<div id="tempBox"></div>
 	<script>
 
-  wx.config({
-    debug: true,
-    appId: '<?php echo $signPackage["appId"];?>',
-    timestamp: <?php echo $signPackage["timestamp"];?>,
-    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
-    signature: '<?php echo $signPackage["signature"];?>',
-     jsApiList: [
-        'checkJsApi',
-        'onMenuShareWeibo',
-        'onMenuShareQZone',
-        'hideMenuItems',
-        'showMenuItems',
-        'hideAllNonBaseMenuItem',
-        'showAllNonBaseMenuItem',
-        'translateVoice',
-        'startRecord',
-        'stopRecord',
-        'onVoiceRecordEnd',
-        'playVoice',
-        'onVoicePlayEnd',
-        'pauseVoice',
-        'stopVoice',
-        'uploadVoice',
-        'downloadVoice',
-        'chooseImage',
-        'previewImage',
-        'uploadImage',
-        'downloadImage',
-        'getNetworkType',
-        'openLocation',
-        'getLocation',
-        'hideOptionMenu',
-        'showOptionMenu',
-        'closeWindow',
-        'scanQRCode',
-        'chooseWXPay',
-        'openProductSpecificView',
-        'addCard',
-        'chooseCard',
-        'openCard'
-      ]
-  });
-	wx.ready(function () {
-	    // 在这里调用 API
-
-	    wx.getLocation({
-	    success: function (res) {
-	        var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
-	        var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
-	        var speed = res.speed; // 速度，以米/每秒计
-	        var accuracy = res.accuracy; // 位置精度
-	    },
-	    cancel: function (res) {
-	        alert('用户拒绝授权获取地理位置');
-	    }
+	wx.config({
+	    debug: true,
+	    appId: '<?php echo $signPackage["appId"];?>',
+	    timestamp: <?php echo $signPackage["timestamp"];?>,
+	    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+	    signature: '<?php echo $signPackage["signature"];?>',
+	    jsApiList: [
+	        'checkJsApi',
+	        'onMenuShareWeibo',
+	        'onMenuShareQZone',
+	        'hideMenuItems',
+	        'showMenuItems',
+	        'hideAllNonBaseMenuItem',
+	        'showAllNonBaseMenuItem',
+	        'translateVoice',
+	        'startRecord',
+	        'stopRecord',
+	        'onVoiceRecordEnd',
+	        'playVoice',
+	        'onVoicePlayEnd',
+	        'pauseVoice',
+	        'stopVoice',
+	        'uploadVoice',
+	        'downloadVoice',
+	        'chooseImage',
+	        'previewImage',
+	        'uploadImage',
+	        'downloadImage',
+	        'getNetworkType',
+	        'openLocation',
+	        'getLocation',
+	        'hideOptionMenu',
+	        'showOptionMenu',
+	        'closeWindow',
+	        'scanQRCode',
+	        'chooseWXPay',
+	        'openProductSpecificView',
+	        'addCard',
+	        'chooseCard',
+	        'openCard'
+	    ]
 	});
 	wx.getLocation({
 	    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
@@ -209,12 +195,10 @@ $signPackage = $jssdk->GetSignPackage();
 	        var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
 	        var speed = res.speed; // 速度，以米/每秒计
 	        var accuracy = res.accuracy; // 位置精度
-	        alert(latitude);
-	        alert(longitude);
-	        alert(speed);
+	        $(".po-icon").html("定位中。。。");
+  		    document.write("纬度"+latitude+"经度"+longitude);
 	    }
 	});
-
   });
 </script>
 </body>
