@@ -212,6 +212,7 @@ $signPackage = $jssdk->GetSignPackage();
 	});
 	alert("纬度"+latitude+"经度"+longitude);
 });
+//在github上修改了
 </script>
 </body>
 </html>
