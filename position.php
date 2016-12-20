@@ -210,7 +210,6 @@ $signPackage = $jssdk->GetSignPackage();
 	    scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
 	    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 	});
-	$(".po-icon").html("定位中。。。");
 	alert("纬度"+latitude+"经度"+longitude);
 });
 </script>
